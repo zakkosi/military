@@ -25720,12 +25720,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2900520881520974886}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.021244396, y: 0.6428, z: 0.203}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4728553767248916929}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2311245573841359496
 GameObject:
@@ -47760,23 +47760,6 @@ MonoBehaviour:
   _colorProperties: []
   _floatProperties: []
   _updateEveryFrame: 1
---- !u!4 &4728553767248916929
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5392183374159063931}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2306432798817878987}
-  - {fileID: 6601962658726417151}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4732206986096341750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54500,22 +54483,6 @@ MonoBehaviour:
   _ovrHand: {fileID: 5469068148650082753}
   _trackingToWorldTransformer: {fileID: 5570319047618644207}
   _handSkeletonProvider: {fileID: 5057966789962875976}
---- !u!1 &5392183374159063931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4728553767248916929}
-  m_Layer: 0
-  m_Name: Tubes_Endotracheal_MK3D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &5392343640636765963
 Transform:
   m_ObjectHideFlags: 0
@@ -65734,12 +65701,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7324505165164580529}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: -0.011710193, y: 0.937, z: -0.443}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4728553767248916929}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6606573782319911828
 Transform:
@@ -92311,4 +92278,5 @@ SceneRoots:
   - {fileID: 3762254972917911367}
   - {fileID: 543450652343951756}
   - {fileID: 8132340395981181949}
-  - {fileID: 4728553767248916929}
+  - {fileID: 2306432798817878987}
+  - {fileID: 6601962658726417151}
