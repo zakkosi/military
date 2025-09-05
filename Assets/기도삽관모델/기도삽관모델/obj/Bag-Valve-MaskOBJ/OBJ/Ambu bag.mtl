@@ -1,0 +1,19 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 23.09.2023 10:20:49
+
+newmtl Ambu_Bag_MTL
+	Ns 29.000002
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.500000 0.500000 0.500000
+	Kd 0.500000 0.500000 0.500000
+	Ks 0.423000 0.423000 0.423000
+	Ke 0.000000 0.000000 0.000000
+	map_Ka maps\Ambu_Bag_MTL_Diffuse.png
+	map_Kd maps\Ambu_Bag_MTL_Diffuse.png
+	map_d maps\Ambu_Bag_MTL_Opacity.png
+	map_bump maps\Ambu_Bag_MTL_Normal.png
+	bump maps\Ambu_Bag_MTL_Normal.png

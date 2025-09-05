@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4722bb6626491e4192cf914d3299eaf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 179410
+  packageName: Oropharyngeal Airway Pack
+  packageVersion: Unity 2018.4.27f1 (64-bit)
+  assetPath: Assets/OropharyngealAirway_Pack/Assets/Prefabs/OropharyngealAirWay_120mm_Rose.prefab
+  uploadId: 392728

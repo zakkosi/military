@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a527d40ea8e99ed4f9e1133b46c79802
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 179410
+  packageName: Oropharyngeal Airway Pack
+  packageVersion: Unity 2018.4.27f1 (64-bit)
+  assetPath: Assets/OropharyngealAirway_Pack/Assets/Prefabs/OropharyngealAirWay_80mm_Orange.prefab
+  uploadId: 392728

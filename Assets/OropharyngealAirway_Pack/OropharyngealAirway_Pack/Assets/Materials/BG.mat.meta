@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8a893bce58e26454aa2753b36e8100f4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 179410
+  packageName: Oropharyngeal Airway Pack
+  packageVersion: Unity 2018.4.27f1 (64-bit)
+  assetPath: Assets/OropharyngealAirway_Pack/Assets/Materials/BG.mat
+  uploadId: 392728
