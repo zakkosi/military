@@ -31277,7 +31277,7 @@ Transform:
   m_GameObject: {fileID: 7762545510769269025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7383, y: 0.5162, z: 0.59}
+  m_LocalPosition: {x: -1.817, y: 0.868, z: 0.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42659,7 +42659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4095373842989416820
 GameObject:
   m_ObjectHideFlags: 0
@@ -78350,11 +78350,11 @@ MonoBehaviour:
   _pointableElement: {fileID: 7885427207593905066}
   _rigidbody: {fileID: 7885427207593905065}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
+  _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
   _slippiness: 0
-  _supportedGrabTypes: 3
+  _supportedGrabTypes: 2
   _pinchGrabRules:
     _thumbRequirement: 1
     _indexRequirement: 1
@@ -92496,7 +92496,7 @@ MonoBehaviour:
   _pointableElement: {fileID: 1170837670337134829}
   _rigidbody: {fileID: 6620515185642338341}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
+  _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 1
   _slippiness: 0
