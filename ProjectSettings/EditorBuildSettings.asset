@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Voicep_Gesture.unity
+    path: Assets/Scenes/Voice_Gesture.unity
     guid: d007d38d04313ce4b80f8409ebef3fac
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 214398455df84b6489b3bc5802013d71, type: 2}
