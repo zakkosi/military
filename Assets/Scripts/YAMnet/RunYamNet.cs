@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Unity.InferenceEngine;
 using UnityEngine;
 
-// --- 핵심 기능만 남긴 RunYamNet 스크립트 ---
 public class RunYamNet : MonoBehaviour
 {
     private const float AudioBufferLengthSec = 0.96f;
@@ -29,13 +28,11 @@ public class RunYamNet : MonoBehaviour
     private float[] audioBuffer = new float[audioBufferSize];
     private const int audioBufferSize = (int)(AudioBufferLengthSec * sampleRate);
 
-    // --- 음성 녹음 관련 변수 ---
     private bool isRecordingSpeech = false;
     private readonly List<float> speechAudioBuffer = new List<float>();
     private int previousLabelIndex = -1;
     private float[] previousAudioBuffer;
 
-    // --- 수정: 온디바이스 Whisper 스크립트 참조만 남김 ---
     public RealtimeWhisper onDeviceWhisper;
     public VoiceUIController uiController;
 
@@ -97,7 +94,6 @@ public class RunYamNet : MonoBehaviour
                 speechAudioBuffer.AddRange(audioBuffer);
             }
 
-            // --- 수정: 파일명 관련 로직 삭제 ---
             if (previousLabelIndex == SPEECH_ID && currentLabelIndex != SPEECH_ID)
             {
                 isRecordingSpeech = false;
@@ -131,7 +127,6 @@ public class RunYamNet : MonoBehaviour
         return outputTensor[0];
     }
 
-    // --- 수정: 온디바이스 Whisper 호출 로직만 남도록 대폭 수정 ---
     private async Task StoreSpeechClip()
     {
         uiController?.SetStatusProcessing();
@@ -146,7 +141,6 @@ public class RunYamNet : MonoBehaviour
 
         try
         {
-            // 2. 녹음된 오디오 버퍼를 float[] 배열로 변환
             float[] recordedAudio = speechAudioBuffer.ToArray();
             Debug.Log($"[RunYamNet] 오디오 녹음 완료. 샘플 수: {recordedAudio.Length}. 온디바이스 Whisper로 전달합니다.");
 
@@ -181,9 +175,19 @@ public class RunYamNet : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    private async void OnDestroy()
     {
+
         isShuttingDown = true;
+
+        while (isProcessing)
+        {
+            await Task.Yield(); 
+        }
+
         worker?.Dispose();
+        worker = null;
+
+        Debug.Log("[RunYamNet] 안전하게 종료 완료");
     }
 }

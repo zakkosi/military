@@ -48,7 +48,7 @@ public class RealtimeWhisper : MonoBehaviour
     [Header("명령어 처리기 연결")]
     public VoiceCommandProcessor commandProcessor;
 
-    // --- 수정: Start() 메서드를 Awake()로 변경하고 모델 로딩만 담당 ---
+
     void Awake()
     {
         SetupWhiteSpaceShifts();
@@ -70,10 +70,6 @@ public class RealtimeWhisper : MonoBehaviour
         lastToken = new NativeArray<int>(1, Allocator.Persistent);
     }
 
-    // --- 삭제: Update() 메서드 ---
-    // 이 스크립트는 더 이상 스스로 업데이트할 필요가 없으므로 삭제합니다.
-
-    // --- 핵심 기능: 외부에서 오디오 데이터를 받아 변환을 시작하는 공개 함수 ---
     public async Task StartTranscriptionFromAudioData(float[] audioData)
     {
         outputString = "";
@@ -84,15 +80,11 @@ public class RealtimeWhisper : MonoBehaviour
 
         Debug.Log($"[RealtimeWhisper] 오디오 데이터 수신 완료. 샘플 수: {audioData.Length}. 변환을 시작합니다.");
 
-        // 오디오 데이터를 480000 크기로 패딩 (zero-padding)
+
         float[] paddedAudioData = new float[480000];
         Array.Copy(audioData, paddedAudioData, audioData.Length);
 
-        // 수정된 audioInput 생성
         audioInput = new Tensor<float>(new TensorShape(1, 480000), paddedAudioData);
-
-
-        //audioInput = new Tensor<float>(new TensorShape(1, audioData.Length), audioData);
 
         EncodeAudio();
 

@@ -15,7 +15,6 @@ public class E5Model : MonoBehaviour
     public ModelAsset modelAsset;
 
     [Header("토크나이저 설정")]
-    // [수정] 파일 이름 대신 TextAsset으로 직접 연결받도록 변경
     public TextAsset tokenizerAsset;
 
     private SentencePieceTokenizer tokenizer;
@@ -36,10 +35,8 @@ public class E5Model : MonoBehaviour
         var model = ModelLoader.Load(modelAsset);
         engine = new Worker(model, BackendType.GPUCompute);
 
-        // [수정] 인스펙터에 연결된 tokenizerAsset이 있는지 확인
         if (tokenizerAsset != null)
         {
-            // [수정] TextAsset의 byte 데이터를 메모리 스트림으로 변환하여 사용 (모든 플랫폼에서 작동)
             using (var modelStream = new MemoryStream(tokenizerAsset.bytes))
             {
                 tokenizer = SentencePieceTokenizer.Create(modelStream);
